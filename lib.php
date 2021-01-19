@@ -175,7 +175,7 @@ function bread_crumbs($f){
         
     }
 
-    echo rtrim($res," / ");
+    echo "<div class='breadcrumbs'>".rtrim($res," / ")."</div>";
 }
 function getIconType(string $path){
     $type = "unknown";

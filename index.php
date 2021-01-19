@@ -26,6 +26,11 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+        <div class="foot-note">
+            <small>
+                <b>NOTE:</b> Clicking file will automatically download the file.
+            </small>
+        </div>
         <?php elseif(path_type($f) == "file"): ?>
             <h1>Invalid File</h1><a href='?'>Back to root parent</a>
         <?php else: ?>
