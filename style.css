@@ -20,6 +20,10 @@ body {
 }
  a {
     color: rgb(19, 115, 211);
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
 }
 footer {
     padding:2em 1em;
@@ -29,4 +33,13 @@ footer {
 footer a {
     color:#333;
     font-weight:bold;
+}
+.foot-note {
+    padding: 1em 0 0 0;
+}
+.breadcrumbs a {
+    color: rgb(56, 31, 199);
+}
+.breadcrumbs {
+    padding: 0 0 1em 0;
 }
