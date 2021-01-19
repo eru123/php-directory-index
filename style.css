@@ -3,20 +3,30 @@ body {
     padding:0;
     box-sizing:border-box;
     font-family:calibri,arial;
-    max-width: 100vw;;
-    overflow-x: auto;
     background:#ccc;
 }
 .container {
+    overflow-x: auto;
     padding: .5em 1.5em 2em 1.5em;
     background: #fff;
 }
+.indexed-table {
+    overflow-x: auto;
+    width: 100%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background: #fff;
+    border-collapse: collapse;
+}
 .indexed-table th {
+    text-align: left;
     text-transform: Capitalize;
 }
 .indexed-table th, .indexed-table td {
-    padding:0 3px;
+    border-bottom: 1px solid #ccc;
     color: #333;
+    padding: .3em 3px;
 }
  a {
     color: rgb(19, 115, 211);

@@ -40,6 +40,19 @@ $injected_css   = ["style.css"];
 
 // Configurable icon set as file icon
 $icon_set = [
-
-]
+    "directory" => "📁",
+    "file"      => "📝",
+    "document"  => "📄",
+    "video"     => "🎞️",
+    "audio"     => "🎧",
+    "image"     => "📷",
+    "text"      => "📝",
+    "binary"    => "🔢",
+    "app"       => "📦",
+    "mobile"    => "📱",
+    "script"    => "📜",
+    "program"   => "💾",
+    "markdown"  => "📖",
+    "unknown"   => "🗑️"
+];
 ```
