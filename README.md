@@ -37,4 +37,9 @@ $favicon        =  "favicon.png";
 // Custom CSS you want to use
 // NOTE: you can inject multiple css
 $injected_css   = ["style.css"];
+
+// Configurable icon set as file icon
+$icon_set = [
+
+]
 ```

@@ -15,9 +15,10 @@
         <?php if(path_type($f) == "dir"): ?>
         <?php page_title(); bread_crumbs($f); ?>
         <table class="indexed-table">
-            <tr> <?php foreach($columns as $th) echo "<th>$th</th>"; ?> </tr>
+            <tr><th> </th> <?php foreach($columns as $th) echo "<th>$th</th>"; ?> </tr>
             <?php foreach($data as $row): ?>
                 <tr>
+                    <td><?php echo getIcon(@$row["path"]); ?></td>
                     <?php foreach($columns as $th) echo $th == "name" 
                         ? "<td><a href='?f=".urlencode($row['inurl'])."'>".htmlentities($row[$th])."</a></td>" 
                         : "<td>".htmlentities($row[$th])."</td>"; 

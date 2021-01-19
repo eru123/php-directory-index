@@ -177,3 +177,47 @@ function bread_crumbs($f){
 
     echo rtrim($res," / ");
 }
+function getIconType(string $path){
+    $type = "unknown";
+
+    if(is_dir($path)) return "directory";
+    if(is_file($path)){
+        $type = "file";
+        $mime = FS::mime_content_type($path);
+        $regex = [
+            "mobile"       => "mobile",
+
+            "application"   => "app",
+            "image"         => "image",
+            "video"         => "video",
+            "audio"         => "audio",
+            "text"          => "text",
+            
+            "x-"            => "binary",
+            "binary"        => "binary",
+            "cgi"           => "app",
+            "package"       => "app",
+            "javascript"    => "app",
+            "script"        => "script",
+            "markdown"      => "markdown",
+            "md"            => "markdown",
+            "book"          => "markdown",
+            "doc"           => "document",
+            "document"      => "document",
+            "word"          => "document",
+            "powerpoint"    => "document",
+            "excel"         => "document",
+            "spreadsheet"   => "document",
+            "json"          => "document",
+            "android"       => "mobile",
+        ];
+
+        foreach($regex as $rgx => $t) if(preg_match('/'.$rgx.'/i',$mime)) $type = $t;
+    }
+    return $type;
+}
+function getIcon(string $path){
+    global $icon_set;
+    $ictype = getIconType($path);
+    return $icon_set[$ictype] ?? ($icon_set["unknown"] ?? "❔");
+}
