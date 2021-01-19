@@ -1,0 +1,16 @@
+{
+    "name": "eru123/indexer",
+    "description": "Index and list all files and directories",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jericho Aquino",
+            "email": "yeoligoakino@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "eru123/linker": "^1.38"
+    }
+}

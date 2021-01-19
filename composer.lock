@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "555611ae6391dd3f1f979f9f2b179e04",
+    "packages": [
+        {
+            "name": "eru123/linker",
+            "version": "1.38",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eru123/linker.git",
+                "reference": "34170622e696eb0c9305513dcfb75953dee9fb40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eru123/linker/zipball/34170622e696eb0c9305513dcfb75953dee9fb40",
+                "reference": "34170622e696eb0c9305513dcfb75953dee9fb40",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4||^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Linker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eru123",
+                    "email": "yeoligoakino@gmail.com"
+                }
+            ],
+            "description": "PHP Framework for building REST API",
+            "keywords": [
+                "api",
+                "framework",
+                "linker",
+                "linking",
+                "rest"
+            ],
+            "support": {
+                "issues": "https://github.com/eru123/linker/issues",
+                "source": "https://github.com/eru123/linker/tree/1.38"
+            },
+            "time": "2021-01-19T07:21:40+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
