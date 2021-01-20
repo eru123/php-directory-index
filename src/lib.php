@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__."/vendor/autoload.php";
+require_once __DIR__."/../vendor/autoload.php";
 
 use \Linker\FileSystem\Core as FS;
 use \Linker\FileSystem\Download;
@@ -143,10 +143,13 @@ function page_title(){
     echo  '<h1 class="page-title">'.htmlentities($page_title).'</h1>';
 }
 
+// echo page logo
 function favicon(){
     global $favicon;
     echo '<link rel="shortcut icon" href="'.urlencode($favicon).'" type="image/x-icon">';
 }
+
+// echo bread crumbs
 function bread_crumbs($f){
     $res = "Directory: ";
     
@@ -178,6 +181,8 @@ function bread_crumbs($f){
 
     echo "<div class='breadcrumbs'>".rtrim($res," / ")."</div>";
 }
+
+// get filetype for icon
 function getIconType(string $path){
     $type = "unknown";
 
@@ -217,6 +222,8 @@ function getIconType(string $path){
     }
     return $type;
 }
+
+// get icon base on filetype
 function getIcon(string $path){
     global $icon_set;
     $ictype = getIconType($path);

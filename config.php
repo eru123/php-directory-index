@@ -8,7 +8,7 @@ $columns        = ["name","ext","size","mime","type","modified"];
 $doc_title      = "PHP File Indexer";
 $page_title     = "Index of /";
 $favicon        =  "favicon.png";
-$injected_css   = ["style.css"];
+$injected_css   = ["src/style.css"];
 
 $icon_set = [
     "directory" => "📁",

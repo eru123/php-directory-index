@@ -1,4 +1,4 @@
-<?php require_once "autoloader.php" ?>
+<?php require_once __DIR__."/src/autoloader.php" ?>
 
 <html lang="en">
 <head>

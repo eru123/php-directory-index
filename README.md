@@ -1,5 +1,5 @@
 # PHP Directory Indexer using Linker
-![PHP Directory Indexer using Linker](demo.PNG)
+![PHP Directory Indexer using Linker](src/demo.PNG)
 
 ### Installing
 change `<path>`  to where you want to extract the project
