@@ -166,7 +166,8 @@ function bread_crumbs($f){
         }
     }
     for($i = 0;$i < count($levels);$i++){
-        $current .= rtrim($current."/".$levels[$i]["link"],"/");
+        $current .= rtrim("/".$levels[$i]["link"],"/");
+        
         if(($i == 0 && count($levels) <= 1) || $i == (count($levels) - 1)){
             $res .= "<span>".htmlentities($levels[$i]["name"])."</span> / ";
         } else {
